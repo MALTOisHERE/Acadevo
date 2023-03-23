@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<script src="script.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" type="icon" href="images/White Minimalist Modern Education Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Acadevo</title>
+</head>
+
+<body>
+
+    <header>
+        <!--Logo de la societe SEI-->
+        <a title="Acadevo" href=""  class="logo"><img src="images/1TEST.png"></a>
+        <!--La bar de navigation PC-->
+        <nav class="navigation">
+            <a href="#">Accueil</a>
+            <a href="#formation">Formation</a>
+            <a href="#organisation">À propos</a>
+            <a href="#contact">Contactez-nous</a>
+            <div class="connecter">
+                <button onclick="window.location.href='#';">Se connecter</button>
+            </div>
+        </nav>
+        <!--Bar de navigation pour telephone-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!--Fermer-->
+            <div class="overlay-content">
+                <a href="#services">métiers</a>
+                <a href="#organisation">organisations</a>
+                <a href="#projects">réalisations</a>
+                <a href="#contact">contact</a>
+            </div>
+        </div>
+        <span onclick="openNav()" class="bar"><i class="fas fa-bars"></i></i></span> <!--Ouvrir-->
+    </header>
+
+    <!--Bar de navigation pour les reseaux sociaux-->
+    <div id="mySidenav" class="sidenav">
+        <a title="Instagram" href="https://www.instagram.com/free_dom_w/" id="instagram"><i
+                class="fab fa-instagram"></i></a>
+        <a title="Discord" href="https://discord.gg/3fcn8aYAzm" id="discord"><i class="fab fa-discord"></a>
+        <a title="Paypal" href="https://www.paypal.com/paypalme/MAITOUAARAB" id="paypal"><i
+                class="fab fa-paypal"></i></a>
+        <a title="Facebook" href="https://web.facebook.com/ait.ouaarab" id="facebook"><i
+                class="fab fa-facebook"></i></a>
+    </div>
+
+    <!--Boutton pour revenir a l'acceuill-->
+    <div id="go-back" class="back">
+        <a title="Revenir à l'accueil" href="#" id="back-btn"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <!--Home-->
+    <section class="main">
+        <div>
+            <!--Titre-->
+            <h2>FONDÉE EN 2023<br><span>Bienvenue à notre plateforme.</span></h2>
+            <div class="certificat">
+                <h3>Certifié ISO 9001 Version 2008 </h3>
+                <!--Download button-->
+                <div class="download">
+                    <a title="Télécharger" href="Download/Certificat ISO 9001 Version 2008.pdf" download="Certificat ISO 9001 Version 2008"><i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <!--Button pour consulter les projet-->
+            <a title="Se connecter" href="#" class="main-btn">Connectez-vous</a>
+            <!--Reseaux sociaux-->
+            <div class="social-icons">
+                <a title="Localisation" href="https://www.google.com/maps/" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                <a title="Instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a title="YouTube" href="https://discord.gg/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a title="Linkedin" href="https://www.paypal.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a title="Facebook" href="https://web.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 2 (Nos activiter)-->
+    <section class="cards" id="formation">
+        <h2 class="title">Fonctionnalité</h2> <!--Titre du section-->
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-pen"></i>
+                </div>
+                <div class="info">
+                    <h3>Cours et TP</h3>
+                    <p>Accès total au TP et cours déposé par votre enseignant pour une meilleure compréhension.
+                    </p>
+                </div>
+                <div class="plus">
+                    <button onclick="window.location.href='cours_tp.html';" class="plusContent"><strong>Voir plus</strong> <i class="fas fa-angle-double-right"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="info">
+                    <h3>Bibliothèque</h3>
+                    <p>Meilleure gestion de la bibliothèque, choisir le livre de votre choix en toute liberté.
+                    </p>
+                </div>
+                <div class="plus">
+                    <button onclick="window.location.href='biblio.html';" class="plusContent"><strong>Voir plus</strong> <i class="fas fa-angle-double-right"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="info">
+                    <h3>Formation</h3>
+                    <p>Profiter des formations sur les différentes catégories éducatives (Math, Informatique, ...).</p>
+                </div>
+                <div class="plus">
+                    <button onclick="window.location.href='formation.html';" class="plusContent"><strong>Voir plus</strong> <i class="fas fa-angle-double-right"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-file-signature"></i>
+                </div>
+                <div class="info">
+                    <h3>Curriculum Vitae</h3>
+                    <p>La création d'un CV professionnel est un élément clé pour réussir sa recherche d'emploi.
+                    </p>
+                </div>
+                <div class="plus">
+                    <button onclick="window.location.href='cv.html';" class="plusContent"><strong>Voir plus</strong> <i class="fas fa-angle-double-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 2 (Nos organisation)-->
+    <section class="organisation" id="organisation">
+        <h2 class="title">À propos</h2> <!--Titre du section-->
+        <div class="content">
+            <div class="definition">&nbsp;&nbsp;&nbsp;<strong>Acadevo</strong> est un site web qui offre une plateforme de gestion pour les étudiants et le personnel universitaire. Le site permet la gestion des étudiants inscrits dans l'université, y compris leurs informations personnelles, leurs notes, leur progression académique et leur inscription aux cours. <br>
+
+                &nbsp;&nbsp;&nbsp;En plus de cela, <strong>Acadevo</strong> offre également un système de gestion de bibliothèque pour les professeurs et les étudiants, qui leur permet de rechercher et d'emprunter des livres et de gérer leur compte de bibliothèque. <br>
+                
+                &nbsp;&nbsp;&nbsp;Le site propose également un système de création de CV pour les étudiants, qui leur permet de créer des CV professionnels et attrayants pour leurs futures recherches d'emploi. <br>
+                
+                &nbsp;&nbsp;&nbsp;En somme, <strong>Acadevo</strong> est une plateforme complète qui permet de gérer efficacement les informations des étudiants, le système de bibliothèque et d'offrir des outils pour la création de CV.
+            </div>
+            <div class="defImage"><img src="images/defImage.png" alt=""></div>
+        </div>
+    </section>
+
+    <!--Section 2 (Contact)-->
+    <section class="cards contact" id="contact">
+        <h2 class="title">Contact</h2> <!--Titre du section-->
+        <div class="content">
+            <!--Tel card-->
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Téléphone</h3>
+                    <p>+212 (0) 528 82 83 33</p>
+                </div>
+            </div>
+            <!--Mail card-->
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>E-mail</h3>
+                    <p>contact@sud-electronique.ma
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact form-->
+        <div class="form-container">
+            <form action="https://send.pageclip.co/5Dk0EnohyWcDMrnBFYvqJW92XmZfhrP2" class="pageclip-form" method="post">
+                <!--Champ du nom cemplet-->
+                <div class="input-row">
+                    <label>Nom complet <em>*</em></label>
+                    <input title="Format: Prenom Nom " type="text" name="Name" placeholder="Ton nom complet..." required>
+                </div>
+                <!--Champs E-mail-->
+                <div class="input-row">
+                    <label>Addresse électronique <em>*</em></label>
+                    <input title="Format: exemlpe@exemlpe.com" type="email" name="Email" placeholder="Ton e-mail..." required>
+                </div>
+                <!--Champs Telephone-->
+                <div class="input-row">
+                    <label>Téléphone <em>*</em></label>
+                    <input type="tel" name="Phone" pattern="[0-9]{10}" title="10 chiffre requise - Format: 0123456789"
+                        placeholder="Ton téléphone..." required>
+                </div>
+                <!--Champs Message-->
+                <div class="input-row">
+                    <label>Message <em>*</em></label>
+                    <textarea title="Taper votre message" name="Message" placeholder="Ton message..." required></textarea>
+                </div>
+                <div class="input-row">
+                    <button title="Envoyer" type="submit">Soumettre</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--Fin-->
+    <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo"><img src="images/footer image.png" alt=""></h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            102 Boulevard Chefchaouni, Marrakesh, Maroc.<br>
+                
+            <a class="footer__btn" href="mailto:contact@acadevo.com">Envoyez-nous un email</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Media</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Online</a>
+              </li>
+      
+              <li>
+                <a href="#">Print</a>
+              </li>
+                  
+              <li>
+                <a href="#">Alternative Ads</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Technology</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="#">Hardware Design</a>
+              </li>
+              
+              <li>
+                <a href="#">Software Design</a>
+              </li>
+              
+              <li>
+                <a href="#">Digital Signage</a>
+              </li>
+              
+              <li>
+                <a href="#">Automation</a>
+              </li>
+              
+              <li>
+                <a href="#">Artificial Intelligence</a>
+              </li>
+              
+              <li>
+                <a href="#">IoT</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p><strong>&copy; 2023 Acadevo.</strong> Tous les droits sont réservés.</p>
+          <div class="legal__links">
+                <a title="Localisation" href="https://www.google.com/maps/" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                <a title="Instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a title="YouTube" href="https://discord.gg/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a title="Linkedin" href="https://www.paypal.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a title="Facebook" href="https://web.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+      </footer>
+      <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+</body>
+
+</html>

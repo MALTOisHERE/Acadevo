@@ -1,0 +1,1000 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/*Hide the scrollbar*/
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+/*Resolution de toute les section*/
+section{
+    padding: 100px 200px;
+    align-items: center;
+}
+
+/*Curseur rouge*/
+/*body{
+    cursor: url('images/icons8-curseur-30.png'), auto;
+}*/
+
+                                                                /*Header*/
+/*Format du Header*/
+header{
+    background-color:#04307c;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 200px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.329); /*Ombre*/
+}
+.connecter{
+    margin-left: 20px;
+}
+ .connecter button{
+    border-radius: 40px;
+    border-color: #fdbc59;
+    border-width: 2px;
+    background-color: #04307c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 15px;
+ }
+ .connecter button:hover{
+    background-color: #fdbc59;
+    color: #04307c;
+    font-weight: bold;
+ } 
+
+/*Logo de la societer SEI*/
+.logo img{
+    height: 55px;
+    width: auto;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*contact resalisation ... design*/
+.navigation a{
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    padding-left: 30px;
+    transition: 0.7s ease;
+    text-decoration: none;
+}
+.navigation a:hover{
+    color: #fdbc59;
+    transition: 0.7 ease;
+}
+.connecter a{
+    padding-left: 0;
+}
+                                                                /*------*/
+
+                                                                /*Acceuille*/
+
+/*Home*/
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/111.png) no-repeat; /*Arriere plan*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*FONDÉE EN 1991 design*/
+.main h2{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
+
+/*Sud Electronique Informatique design*/
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 3em;
+    font-weight: 600;
+    overflow: hidden;
+    border-right: .15em solid #ff3737;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: auto;
+    animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/*Distance typing effect*/
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }  
+}
+
+/*Distance bink effect*/
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #fdbc59; }  
+}
+
+/*Certifié ISO 9001 Version 2008 design*/
+.main h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/*Consulter nos projet design*/
+.main-btn{
+    color: #04307c;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    border-radius:  15px;
+    margin-bottom: 40px;
+    box-shadow: 5px 10px ;
+    transition: 0.7s ease;
+}
+
+/*Consulter nos projet animation*/
+.main-btn:hover{
+    color: #fdbc59;
+    box-shadow: -5px -10px;
+    transform: scale(1.1);
+    
+}
+
+/*reseau sociaux design*/
+.social-icons a{
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+                                                            /*------*/
+                                                            
+/*Titre de chaque setion design*/
+.title{
+    display: flex;
+    justify-content: center;
+    color: #04307c;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+/*Titre de section realisation*/
+.title2{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+/*Contenu de chaque design*/
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*content paragraphe design*/
+.content p{
+    margin-top: 0em;
+    font-size: 1.2em;
+}
+
+/*last ligne on organisation section*/
+.content .bas{
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+/*organisation card design*/
+.commercial {
+    width: 20em;
+    text-align: justify;
+    font-size: 1.2em;
+    box-sizing: content-box;
+    justify-content: center;
+    padding: 0.6em;
+    margin-top: 2em;
+}
+
+/*card content design*/
+.commercial-img{
+    position: relative;
+    color: white;
+}
+
+/*titre afficher sur l'image*/
+.img-title {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-size: 2em;
+  font-weight: 800;
+  text-align: left;
+  transition: 0.7s ease;
+}
+
+/*title animation*/
+.img-title:hover{
+    transform: scaleY(1.1);
+}
+
+/*image adjust*/
+.commercial-img img{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    filter: brightness(40%);
+    width: 100%;  
+}
+
+                                                               /*servies and contact section cards design*/
+
+/*card design*/
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(4, 0, 54, 0.158);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.2s ease;
+    border-color: #c7c7c7a1;
+    border-style: solid;
+    border-width: 0.1px;
+}
+
+/*card services animation*/
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/*card icon design*/
+.card .icon {
+    color: #04307c;
+    font-size: 6em;
+    text-align: center;
+}
+.plus{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.plusContent{
+    width: 45%;
+    padding: 10pxpx;
+    border: none;
+    background-color: #04307c;
+    color: white;
+    border-radius: 40px;
+}
+.plusContent:hover{
+    color: #04307c ;
+    background-color: #fdbc59;
+    cursor: pointer;
+}
+/*card info adjust and design*/
+.info {
+    text-align: center;
+}
+
+/*ttle card design*/
+.info h3{
+    color: #04307c;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
+}
+
+/*paragraph card design*/
+.info p{
+    color: #000;
+    line-height: 25px;
+}
+
+/*contact animation cards*/
+.contact .card:hover{
+    box-shadow: none;
+    transform: none;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3{
+    color: #000;
+}
+
+.contact .content{
+    padding-bottom: 3em;
+}
+.organisation{
+    background: linear-gradient(to top,rgba(245, 246, 252, 0), rgba(255, 255, 255, 0.158)),
+    url(images/def\ section\ back.png) no-repeat;
+    background-size: cover;
+    color: white;
+}
+.organisation .content{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.organisation .definition{
+    width: 50%;
+    text-align: justify;
+    margin-right: 80px;
+    font-size: 20px;
+    line-height: 40px;
+}
+.organisation .title{
+    color: white;
+}
+.defImage img{
+    height: 500px;
+    width: auto;
+    transition: 0.7s ease;
+}
+.organisation .content:hover img{
+        transform: translateY(-10px);
+        transition: 0.7s ease;
+}
+.button_container{
+    height: 30px;
+    width: 100%;
+}
+.retour_accueil{
+    width: 25%;
+    border-radius: 10px;
+    background-color: #04307c;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: 0.7s ease;
+
+}
+.retour_accueil:hover{
+    background-color: #fdbc59;
+    color: #04307c;
+    transform: translateY(-3px);
+    transition: 0.7s ease;
+}
+
+                                                            /*-------------*/
+
+       
+/*footer design*/
+
+  
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #eeeeee;
+    border-top: 1px solid #c2c2c2;
+    font-size: smaller;
+    width: 100%;
+  }
+  
+  footer h1 img{
+    height: 60px;
+    width: auto;
+  }
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: #999;
+  }
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #2f2f2f;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+  .footer__btn:hover{
+    background-color: #dadada;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  
+  .footer a:hover {
+    color: #535353;
+  }
+  .footer__nav {
+    display: flex;
+      flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: #999;
+  }
+  
+  .nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  .legal__links a{
+    margin-right: 25px;
+    font-size: 20px;
+    color: #999;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+/*card paragraph 06 and mail*/
+.contact p{
+    font-size: 1.1em;
+}
+
+                                                         /*mail form*/
+
+/*form design*/
+.form-container{
+    width: 100%;
+    max-width: 650px;
+    margin:0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: #04307c;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(4, 0, 54, 0.158);
+}
+
+/*form titles*/
+.input-row label{
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 700;
+}
+
+/*boxes design*/
+.input-row input, textarea , button{
+    font-weight: 400;
+    color: #04307c;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    margin-bottom: 3px;
+    font-size: 1em;
+    border: 1px solid #04307c;
+    transition: 0.7s ease;
+    box-sizing: border-box;
+}
+
+/*textarea adjust*/
+.input-row textarea{
+    resize: vertical;
+    min-height: 200px;
+    max-height: 500px;
+}
+
+
+/*soumettre button design*/
+.input-row button[type="submit"]{
+    width: 100px;
+    display: block;
+    margin:0 auto;
+    box-sizing: content-box;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    background: #04307c;
+    border: none;
+    transition: 0.7s ease;
+    font-size: 1em;
+}
+
+/*soumettre boutton animation*/
+.input-row button[type="submit"]:hover{
+    background-color: #fdbc59;
+    color: #04307c;
+}
+
+                                                 /*-----------*/
+
+                                                 /*side navigation fb ds insta ...*/
+
+#mySidenav a {
+    margin-top: 90px;
+    position: fixed; 
+    right: -50px; 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 60px; 
+    text-decoration: none; 
+    font-size: 20px; 
+    color: white; 
+    border-radius: 5px  0 0 5px; 
+}
+  
+#mySidenav a:hover {
+    right: 0; 
+}
+  
+  
+#instagram {
+    top: 20px;
+    background: linear-gradient(#515bd4, #8134af, #dd2a7b, #feda77, #f58529);
+}
+  
+#discord {
+    top: 80px;
+    background-color: #738adb; 
+}
+  
+#paypal {
+    top: 140px;
+    background: linear-gradient(#253b80, #2997d8); 
+}
+  
+#facebook {
+    top: 200px;
+    background-color: #1877f2;
+}
+                                                     /*-------*/
+
+                                                     /*retour boutton*/
+
+/*retour button design*/
+#go-back a{
+    bottom: 100px ;
+    position: fixed; 
+    right: 40px; 
+    padding: 15px; 
+    height: 20px;
+    width: 20px;
+    text-decoration: none; 
+    font-size: 1.5em; 
+    color: #fdbc59; 
+    border-radius: 50%; 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transition: 0.7s ease;
+}
+
+/*retour button animation*/
+#go-back a:hover{
+    color:  #04307c; 
+}
+
+/*retour button circle design*/
+#back-btn{
+    font-size: 2em;
+    box-sizing: content-box;
+    background-color: #04307c;
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.432);
+    transition: 0.7s ease;
+    z-index: 900;
+}
+
+/*retour button animation*/
+#back-btn:hover{
+    background-color:  #fdbc59;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.432);
+}
+                              /*-------------------*/
+
+                              /*certificat button download design*/
+
+.certificat{
+    display: flex;
+}
+
+.main .download{
+    color: #04307c;
+    font-size: 0.9em;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 5px;
+    width: auto;
+    padding: 0.6em;
+    padding-top: 0.55em;
+    margin-top: 9.6px;
+    margin-left: 10px;
+    height: 2em;
+    box-sizing: border-box; 
+}
+
+.main .download a{
+    justify-content: space-between;
+    transition: 0.7s ease; 
+    text-decoration: none;
+    font-weight: 600;
+    color: #04307c;
+}
+
+.main .download a:hover{
+      color: #ff3737;
+      
+}
+.formation_top{
+    padding: 0;
+    height: 700px;
+    width: 100%;
+    background: url(images/image\ tp\ et\ \ cours.png) no-repeat;
+    background-size: cover;
+}
+.biblio_top{
+    padding: 0;
+    height: 700px;
+    width: 100%;
+    background: url(images/biblio\ top\ image.png) no-repeat;
+    background-size: cover;
+}
+.formation_top{
+    padding: 0;
+    height: 700px;
+    width: 100%;
+    background: url(images/formation\ top\ image.png) no-repeat;
+    background-size: cover;
+}
+.cv_top{
+    padding: 0;
+    height: 700px;
+    width: 100%;
+    background: url(images/cv\ top\ image.png) no-repeat;
+    background-size: cover;
+}
+.tp_cours__def{
+    padding-top: 0;
+    background: url(images/object\ background.png) no-repeat;
+    background-size: cover;
+}
+.tp_cours__def h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.deff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contentdef{
+    width: 50%;
+    line-height: 40px;
+}
+.contentdef span{
+    font-size: xx-large;
+}
+.tp_cours__def p{
+    line-height: 40px;
+    width: 50%;
+}
+
+                                       /*-----------------*/
+
+@media (max-width:1800px) {
+    .commercial {
+        width: 50em;
+        font-size: 1em;
+    }
+}
+
+@media (max-width:1044px) {
+    .commercial {
+        width: 40em;
+    }
+}
+
+@media (max-width:820px) {
+    .commercial {
+        width: 30em;
+    }
+}
+
+@media (max-width:1485px){
+    .main h2 span,.main h3{
+        font-size: 2em;
+    }
+}
+
+@media (max-width:753px){   
+    .main h2 span,.main h3{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:438px){
+    .main h2 span,.main h3{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size:  1em;
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    #go-back a{
+        height: 30px;
+        width: 30px;
+    }
+    #back-btn{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+    .navigation a{
+        font-size: 1.2em;
+    }
+    #go-back a{
+        height: 25px;
+        width: 25px;
+    }
+    #back-btn{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:400px){
+    body{
+        font-size: 11px;
+    }
+    .navigation a{
+        font-size: 1.2em;
+    }
+
+}
+
+@media (max-width:540px){
+    .footer-title{
+        font-size: 1em;
+    }
+    .footer .social-icons a{
+        font-size: 1.3em;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:414px){
+    .footer-title{
+        font-size: 0.7em;
+    }
+    .footer .social-icons a{
+        font-size: 1em;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:393px){
+    body{
+        font-size: 10px;
+    }
+    .navigation a{
+        font-size: 1em;
+    }
+    #go-back a{
+        height: 15px;
+        width: 15px;
+    }
+    #back-btn{
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width:331px){
+    body {
+        font-size: 10px;
+    }
+    .navigation a{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:876px) {
+    .navigation{
+        display: none;
+    }
+        /* The Overlay (background) */
+    .overlay {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+        height: 100%;
+        width: 0;
+        position: fixed; /* Stay in place */
+        z-index: 999; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0); /* Black fallback color */
+        background-color: rgba(9, 1, 54, 0.9); /* Black w/opacity */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+    /* Position the content inside the overlay */
+    .overlay-content {
+        position: relative;
+        top: 25%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+    /* The navigation links inside the overlay */
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #ffffff;
+        display: block; /* Display block instead of inline */
+        transition: 0.3s; /* Transition effects on hover (color) */
+    }
+    /* When you mouse over the navigation links, change their color */
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+    .bar{
+        font-size: 30px;
+        color: #04307c;
+    }
+    /* Position the close button (top right corner) */
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+}
+
+@media  (min-width:876px){
+    #myNav {
+        display: none;
+    }
+    .bar{
+        display: none;
+    }
+}
+    
+
+
+
+
+
+        
+
